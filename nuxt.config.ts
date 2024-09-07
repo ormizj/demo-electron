@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["nuxt-electron"],
   ssr: false,
+  app: { cdnURL: "./" },
   electron: {
     disableDefaultOptions: true,
     build: [

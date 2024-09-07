@@ -3,8 +3,10 @@
   "private": true,
   "type": "module",
   "main": "dist-electron/main.js",
+  "productName": "Demo Electron",
+  "version": "0.0.1",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build --prerender && electron-builder",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
