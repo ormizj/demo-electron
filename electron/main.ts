@@ -1,5 +1,4 @@
 import { app, BrowserWindow } from "electron";
-import path from "path";
 
 app.whenReady().then(() => {
   new BrowserWindow().loadURL(process.env.VITE_DEV_SERVER_URL!);
