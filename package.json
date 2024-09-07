@@ -4,7 +4,7 @@
   "type": "module",
   "main": "dist-electron/main.js",
   "productName": "Demo Electron",
-  "description": "Template for Nuxt with Electron",
+  "description": "Lean Template for Nuxt with Electron",
   "version": "1.0.0",
   "scripts": {
     "build": "nuxt build --prerender && electron-builder",
