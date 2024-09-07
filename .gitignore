@@ -5,6 +5,8 @@
 .nitro
 .cache
 dist
+release
+dist-electron
 
 # Node dependencies
 node_modules
