@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["nuxt-electron"],
+
   electron: {
+    // disableDefaultOptions: true,
     build: [
       {
         // Main-Process entry file of the Electron App.
@@ -10,7 +12,7 @@ export default defineNuxtConfig({
       },
       {
         entry: "electron/preload.ts",
-        onstart(args) {
+        onstart(args: any) {
           // Notify the Renderer-Process to reload the page when the Preload-Scripts build is complete,
           // instead of restarting the entire Electron App.
           args.reload();
@@ -22,5 +24,9 @@ export default defineNuxtConfig({
     // See 👉 https://github.com/electron-vite/vite-plugin-electron-renderer
     renderer: {},
   },
-  ssr: false, // #43
+
+  // #43
+  ssr: false,
+
+  compatibilityDate: "2024-09-07",
 });
