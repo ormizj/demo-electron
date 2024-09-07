@@ -5,15 +5,6 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
 
-// The built directory structure
-//
-// ├─┬ dist-electron
-// │ ├─┬ main
-// │ │ └── index.js
-// │ ├─┬ preload
-// │ │ └── index.js
-// │ ├─┬ renderer
-// │ │ └── index.html
 process.env.APP_ROOT = path.join(__dirname, "..");
 
 export const MAIN_DIST = path.join(process.env.APP_ROOT, "dist-electron");
@@ -26,11 +17,7 @@ process.env.VITE_PUBLIC = process.env.VITE_DEV_SERVER_URL
 let win: BrowserWindow | null;
 
 function createWindow() {
-  win = new BrowserWindow({
-    webPreferences: {
-      preload: path.join(MAIN_DIST, "preload.js"),
-    },
-  });
+  win = new BrowserWindow();
 
   if (process.env.VITE_DEV_SERVER_URL) {
     win.loadURL(process.env.VITE_DEV_SERVER_URL);
