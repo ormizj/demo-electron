@@ -1,75 +1,23 @@
-# Nuxt 3 Minimal Starter
+# Demo Electron
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A working Nuxt Electron project with minimal configuration, demonstrating how to integrate Nuxt.js with Electron for desktop application development.
 
-## Setup
+## Getting Started
 
-Make sure to install the dependencies:
+1. Clone the project and navigate to its directory
+2. Install dependencies: `npm install`
+3. Start development mode: `npm run dev`
+4. Build the project: `npm run build` - The executable will be generated at `/dist/win-unpacked/<app-name>.exe`
 
-```bash
-# npm
-npm install
+## Configuration Warning
 
-# pnpm
-pnpm install
+Before changing configurations, note that most will work in dev mode. Production mode breaks easily, ensure to test the executable file before committing configuration changes.
 
-# yarn
-yarn install
+## Known Issues
 
-# bun
-bun install
-```
+- Can't run the latest Nuxt version (tested with `Nuxt 3.13.1`)
 
-## Development Server
+## Resources
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- [Nuxt](https://nuxt.com/)
+- [Nuxt Electron](https://nuxt.com/modules/electron)
