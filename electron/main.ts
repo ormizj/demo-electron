@@ -8,8 +8,6 @@ app.whenReady().then(() => {
     win.loadURL(process.env.VITE_DEV_SERVER_URL);
     win.webContents.openDevTools();
   } else {
-    win.loadFile(
-      path.join(process.env.APP_ROOT!, ".output/public", "index.html")
-    );
+    win.loadFile(path.join(app.getAppPath(), ".output/public", "index.html"));
   }
 });
