@@ -1,3 +1,5 @@
+# CURRENTLY THERE ARE ISSUES WITH THE BUILD MODE NITRO SERVER
+
 # Demo Electron
 
 A working Nuxt Electron project with minimal configuration, demonstrating how to integrate Nuxt.js with Electron for desktop application development.
